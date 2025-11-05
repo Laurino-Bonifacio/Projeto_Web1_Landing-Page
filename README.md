@@ -31,4 +31,4 @@ projeto/
 └── docs/                 (Arquivo PDF do currículo)
 
 
-
+acessar site: https://laurino-bonifacio.github.io/-Projeto_Web1_Landing-Page/
