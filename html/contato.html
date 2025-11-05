@@ -1,34 +1,79 @@
-<!doctype html>
-<html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Contato — Projeto</title>
-  <link rel="stylesheet" href="../css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Ana Amélia R. de Oliveira</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <ul class="nav">
-        <li><a href="../index.html">Início</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
-        <li><a href="formacao.html">Formação</a></li>
-        <li><a href="disciplinas.html">Disciplinas</a></li>
-        <li><a href="contato.html" class="active">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <div class="container-menu">
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="formacao.html">Formação</a>
+                <a href="disciplinas.html">Disciplinas</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+        </div>
+    </header>
 
-  <main class="container">
-    <h1>Contato</h1>
-    <ul>
-      <li>Email: exemplo@instituicao.edu.br</li>
-      <li>Telefone: (xx) xxxx-xxxx</li>
-    </ul>
-  </main>
+    <main class="conteudo-contato">
+        <h1>Entre em Contato</h1>
+        
+        <form action="#" method="POST" class="formulario-contato">
+            
+            <fieldset>
+                <legend>Informações Pessoais</legend>
+                
+                <div class="campo">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
 
-  <footer>
-    <p><a href="../index.html">Voltar ao início</a></p>
-  </footer>
+                <div class="campo">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Mensagem</legend>
+                
+                <div class="campo">
+                    <label for="assunto">Assunto:</label>
+                    <select id="assunto" name="assunto" required>
+                        <option value="" disabled selected>Selecione um assunto</option>
+                        <option value="orientacao">Orientação de Pesquisa</option>
+                        <option value="convite">Convite para Evento ou Banca</option>
+                        <option value="duvida_disciplina">Dúvida sobre Disciplina IFCE</option>
+                        <option value="outro">Outro Assunto</option>
+                    </select>
+                </div>
+                
+                <div class="campo">
+                    <label for="mensagem">Mensagem Detalhada:</label>
+                    <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+                </div>
+
+            </fieldset>
+
+            <div class="campo-submit">
+                <button type="submit" class="botao-enviar">ENVIAR MENSAGEM</button>
+            </div>
+            
+        </form>
+        
+        <aside class="info-adicional">
+            <h2>Outras Formas de Contato</h2>
+            <p><strong>Endereço Profissional:</strong> Instituto Federal do Ceará/Campus Maranguape, Rua José Pereira Filho.</p>
+            <p><strong>E-mail Institucional:</strong> Professora Ana Amélia está no IFCE (Campus Maranguape).</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Projeto Landing Page - Desenvolvimento Web I | Equipe: Laurino e Davi</p>
+    </footer>
 </body>
 </html>
